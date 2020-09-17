@@ -1,0 +1,59 @@
+
+.Gallaryback{
+    padding-top:30px ;
+    padding-bottom:30px ;
+
+    border-radius:60px ;
+    background-color: rgba(0,0,0,0.05);
+    top:5%;
+    left: 10%;
+    width: 80%;
+    margin: auto;
+    
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start ;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 80vh;
+    z-index: 50;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    animation-name: slowhoop;
+    animation-duration: 4s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes slowhoop{
+    
+    0%{    background-color: rgba(0,0,0,0.05);
+    }
+    25%{    background-color: rgba(0,0,0,0.1);
+    }
+    50%{    background-color: rgba(0,0,0,0.2);
+    }
+    100%{    background-color: rgba(0,0,0,0.3);
+    }
+
+}
+
+.imag{
+    border-radius:20px ;
+    width: 21%;
+    min-width: 0;
+
+    margin: 10px;
+    transition: all 0.5s;
+
+}
+.imag:hover{
+    border-radius:0px ;
+
+   transform: scale(2);
+}

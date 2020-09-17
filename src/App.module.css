@@ -1,0 +1,40 @@
+.App {
+  position:absolute;
+  z-index: 100;
+}
+
+.buttons{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 40%;
+  left:0;
+}
+
+.buttons button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  all: unset;
+  
+  text-align: center;
+  font-size: 30px;
+  margin: 7px;
+  padding: 10px;
+  color:#382933;
+  transition: all 0.3s;
+}
+
+.buttons button:hover{
+  color: #ff4301;
+}
+
+.buttons button:active{
+  transform: scale(0.9);
+
+}
+
+
